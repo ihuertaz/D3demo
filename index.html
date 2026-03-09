@@ -1,33 +1,33 @@
-<!DOCTYPE html>​
-<html>​
-<head>​
-    <title>News Reveal</title>​
-</head>​
-<body>​
-​
-<button onclick="changeHeadline()">Next Headline</button>​
-<h2 id="headline">Council spending report</h2>​
-​
-<script>​
-  // 1. Store your headlines in a list (Array)​
-  const newsTicker = [​
-    "£2.3m overspend uncovered",​
-    "Local park set for renovation",​
-    "New library hours announced",​
-    "Local team wins regional final!",​
-    "Council denies 'alien' sightings"​
-  ];​
-​
-  let index = 0; ​
-​
-  function changeHeadline() {​
-    // 3. Update the text using the current index​
-    document.getElementById("headline").innerText = newsTicker[index];​
-​
-    // 4. Move to the next headline, or loop back to the start​
-    index = (index + 1) % newsTicker.length;​
-  }​
-</script>​
-​
-</body>​
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Reveal</title>
+</head>
+<body>
+
+<button onclick="changeHeadline()">Next Headline</button>
+<h2 id="headline">Council spending report</h2>
+
+<script>
+  // 1. Store your headlines in a list (Array)
+  const newsTicker = [
+    "£2.3m overspend uncovered",
+    "Local park set for renovation",
+    "New library hours announced",
+    "Local team wins regional final!",
+    "Council denies 'alien' sightings"
+  ];
+
+  let index = 0; // 2. Keep track of which headline we are on
+
+  function changeHeadline() {
+    // 3. Update the text using the current index
+    document.getElementById("headline").innerText = newsTicker[index];
+
+    // 4. Move to the next headline, or loop back to the start
+    index = (index + 1) % newsTicker.length;
+  }
+</script>
+
+</body>
 </html>
