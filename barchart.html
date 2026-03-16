@@ -90,6 +90,8 @@
       .on("mouseout", function () {
         d3.select(this).attr("fill", "steelblue");
       });
+  // 10. Attach SVG to the page
+      document.getElementById("chart").appendChild(svg.node());
   </script>
 </body>
 </html>
